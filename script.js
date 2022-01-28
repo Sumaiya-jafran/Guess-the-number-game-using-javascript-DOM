@@ -55,7 +55,7 @@ document.querySelector('#check_btn').addEventListener('click',function(){
         guessingNotification.innerText=('You Dont have life! STOP here');
         life.innerText = ("NO LIFE!!!");
         bgColor.style.backgroundColor = '#8E0505';
-        inputValue = '?';
+        document.querySelector('.number__box').innerText = '?';
         finalScore.innerText = 'Your Final Score is ' + highestScore;
        
     }
