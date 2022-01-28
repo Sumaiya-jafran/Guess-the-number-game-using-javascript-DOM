@@ -23,6 +23,8 @@ document.querySelector('#check_btn').addEventListener('click',function(){
  
     if(inputValue == ''){
         guessingNotification.innerText=("No Input Provided");
+        guessingNotification.style.color = 'red';
+        document.querySelector('.number__box').innerText = '?';
     }
     else if(inputValue == randNumber && i > 0) {
         guessingNotification.innerText=("Correct Number");
@@ -30,7 +32,7 @@ document.querySelector('#check_btn').addEventListener('click',function(){
         highestScore += 1;
         life.innerText = i;
         bgColor.style.backgroundColor = '#2EB086';
-        guessingNotification.style.fontSize = '20px';
+        //guessingNotification.style.fontSize = '20px';
         showScore.innerText  ="highest score : " + highestScore;
 
         
@@ -41,7 +43,7 @@ document.querySelector('#check_btn').addEventListener('click',function(){
         life.innerText = i;
         bgColor.style.backgroundColor = '#1e1e27';
         guessingNotification.style.color = 'yellow';
-        guessingNotification.style.fontSize = '30px';
+        //guessingNotification.style.fontSize = '30px';
     }
     else if(inputValue < randNumber && i > 0) {
         guessingNotification.innerText=("too low");
@@ -49,7 +51,7 @@ document.querySelector('#check_btn').addEventListener('click',function(){
         life.innerText = i;
         bgColor.style.backgroundColor = '#1e1e27';
         guessingNotification.style.color = 'orange';
-        guessingNotification.style.fontSize = '15px';
+        //guessingNotification.style.fontSize = '15px';
     }
     else{
         guessingNotification.innerText=('You Dont have life! STOP here');
