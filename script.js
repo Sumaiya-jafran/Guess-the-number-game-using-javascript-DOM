@@ -43,6 +43,7 @@ document.querySelector('#check_btn').addEventListener('click',function(){
         life.innerText = i;
         bgColor.style.backgroundColor = '#1e1e27';
         guessingNotification.style.color = 'yellow';
+        document.querySelector('.number__box').innerText = '?';
         //guessingNotification.style.fontSize = '30px';
     }
     else if(inputValue < randNumber && i > 0) {
@@ -51,6 +52,7 @@ document.querySelector('#check_btn').addEventListener('click',function(){
         life.innerText = i;
         bgColor.style.backgroundColor = '#1e1e27';
         guessingNotification.style.color = 'orange';
+        document.querySelector('.number__box').innerText = '?';
         //guessingNotification.style.fontSize = '15px';
     }
     else{
