@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript dom first class</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts start here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <!-- google fonts end here -->
+</head>
+<body>
+    <header>
+        <div class="container">
+         <div class="single_item_header">
+            <div class="button_header">
+               <button id="resetButton">Play Again</button>
+            </div>
+            <div class="header_text">
+                <span>(Between 1 to 10)</span>
+            </div>
+         </div>
+        </div>
+    </header>
+
+    <!-- guess number -->
+
+
+    <section class="guess__number">
+        <div class="container">
+            <div class="gues_single_item">
+                <h1 id="finalscore">Guess My Number !</h1>
+<div class="border__box">
+    
+    <div class="border"></div>
+
+    <div class="number__box">?</div>
+</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="input__details">
+        <div class="container">
+            <div class="details__single_item">
+                <form action="">
+                    <input type="text" id="input_value">
+                    <button id="check_btn">Check !</button>
+                </form>
+                <div class="score__details">
+                    <p id="guessing">Guessing Start.....</p>
+                    <p id="scoreLife">Life:  <span id="score">10</span></p>
+                    <p id="highScore">Highscore:  <span id="hg_num">0</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
